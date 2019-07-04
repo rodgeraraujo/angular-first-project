@@ -1,0 +1,9 @@
+<h2>Listagem</h2>
+
+<ul>
+  <li *ngFor="let c of usuarios">
+      <img [attr.src]="c.avatar_url" width="1" height="1" />
+    
+   {{c.id}} - {{c.login}} - {{c.html_url}} 
+  </li>
+</ul>
